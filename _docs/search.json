@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "foo\n\n foo ()"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data Analytics Series",
+    "section": "",
+    "text": "Here we are doing a series on Data Analystics using a reatils data set taken from Kaggle.\nHere are the notebooks for two session done till now\n\nSession 1 : Customer Analysis using RFM models <Link here>\nSession 2 : Sales Analysis via Regression Models <Link here>\n\nA brief about the data is as follows"
+  },
+  {
+    "objectID": "index.html#you-can-do-and-add-you-analysis-using-follwing-steps",
+    "href": "index.html#you-can-do-and-add-you-analysis-using-follwing-steps",
+    "title": "Data Analytics Series",
+    "section": "You can do and add you analysis using follwing steps",
+    "text": "You can do and add you analysis using follwing steps\nPre-requisite: You need to have a github account\nSteps:\n1. Use Cmd Shell to create a new python environment using conda or venv, and install relevnat packages for you analysis.\n2. Install nbdev. Make sure you use pip install --force-reinstall nbdev to install this.\n3. Clone this repository via git clone https://github.com/jkapila/retail-analytics.git\n4. Get in folder using cd retail-analytics\\nbs.\n5. Create a new branch with your name, like yourname-analysis.\n6. Open jupyter lab / notebook in folder and add notebook with a sequence identifier as XX_Name_of_Notebook.ipynb.\n7. Keep working in the notebook wiht all you analysis.\n8. After the work is finish run nbdev_prepare\n9. Git add, commit and push.\n10. Create a PR to add you analysis."
+  },
+  {
+    "objectID": "index.html#analysis-and-queries",
+    "href": "index.html#analysis-and-queries",
+    "title": "Data Analytics Series",
+    "section": "Analysis and Queries",
+    "text": "Analysis and Queries\n\nTo use the analysis you can go through the notebook in cronological order if number XX\n\nFor any doubts please connect or refer documnetation on nbdev."
+  }
+]
