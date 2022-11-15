@@ -4,3 +4,5 @@ website:
       - index.ipynb
       - 00_Data-Description.ipynb
       - 01_RFM.ipynb
+      - 02_Price_Demand.ipynb
+      - 03_Supermart Analysis-Regression - 9 Nov.ipynb

@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://charmi1128.github.io/retail-analytics/data-description.html</loc>
-    <lastmod>2022-11-14T12:49:46.342Z</lastmod>
+    <loc>https://charmi1128.github.io/retail-analytics/price_demand.html</loc>
+    <lastmod>2022-11-15T13:13:45.857Z</lastmod>
+  </url>
+  <url>
+    <loc>https://charmi1128.github.io/retail-analytics/supermart analysis-regression - 9 nov.html</loc>
+    <lastmod>2022-11-15T13:13:27.697Z</lastmod>
   </url>
   <url>
     <loc>https://charmi1128.github.io/retail-analytics/index.html</loc>
-    <lastmod>2022-11-14T12:49:47.120Z</lastmod>
+    <lastmod>2022-11-15T13:13:24.365Z</lastmod>
+  </url>
+  <url>
+    <loc>https://charmi1128.github.io/retail-analytics/data-description.html</loc>
+    <lastmod>2022-11-15T13:13:49.613Z</lastmod>
   </url>
   <url>
     <loc>https://charmi1128.github.io/retail-analytics/rfm.html</loc>
-    <lastmod>2022-11-14T12:57:08.634Z</lastmod>
-  </url>
-  <url>
-    <loc>https://charmi1128.github.io/retail-analytics/Untitled.html</loc>
-    <lastmod>2022-11-14T12:57:06.795Z</lastmod>
+    <lastmod>2022-11-15T13:13:48.349Z</lastmod>
   </url>
 </urlset>
