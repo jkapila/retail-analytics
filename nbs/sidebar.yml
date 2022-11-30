@@ -1,8 +1,17 @@
 website:
   sidebar:
+    search: true
     contents:
-      - index.ipynb
-      - 00_Data-Description.ipynb
-      - 01_RFM.ipynb
-      - 02_Price_Demand.ipynb
-      - 03_Supermart Analysis-Regression - 9 Nov.ipynb
+      - section: "Retail Data"
+        contents:
+          - index.ipynb
+          - 00_Data-Description.ipynb
+          - 01_RFM.ipynb
+          - 02_Price_Demand.ipynb
+          - 03_Supermart Analysis-Regression - 9 Nov.ipynb
+      - section: "Finance Data"
+        contents:
+          - 04_Finance_Data_Analysis.ipynb
+          - 05_Data_Cleaning.ipynb
+          - 06_Analysis.ipynb
+    

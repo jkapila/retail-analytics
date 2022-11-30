@@ -2,8 +2,8 @@ project:
   output-dir: _docs
 
 website:
-  title: "Retail analytics"
-  site-url: "https://jkapila.github.io/retail-analytics"
+  title: "Data Analytics"
+  site-url: "https://charmi1128.github.io/retail-analytics"
   description: "Illustration of Retail Analytics"
   repo-branch: main
-  repo-url: "https://github.com/jkapila/retail-analytics"
+  repo-url: "https://github.com/charmi1128/retail-analytics"

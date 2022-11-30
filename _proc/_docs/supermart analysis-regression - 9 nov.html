@@ -8,7 +8,7 @@
 
 <meta name="description" content="Understanding sales pattern and measuring impact of price change on demand">
 
-<title>retail-analytics - Price Demand Analysis on Retail Data</title>
+<title>Data Analytics - Price Demand Analysis on Retail Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -210,10 +210,10 @@ e.exports=function(t){return null!=t&&(n(t)||function(t){return"function"==typeo
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="retail-analytics - Price Demand Analysis on Retail Data">
+<meta property="og:title" content="Data Analytics - Price Demand Analysis on Retail Data">
 <meta property="og:description" content="Understanding sales pattern and measuring impact of price change on demand">
-<meta property="og:site-name" content="retail-analytics">
-<meta name="twitter:title" content="retail-analytics - Price Demand Analysis on Retail Data">
+<meta property="og:site-name" content="Data Analytics">
+<meta name="twitter:title" content="Data Analytics - Price Demand Analysis on Retail Data">
 <meta name="twitter:description" content="Understanding sales pattern and measuring impact of price change on demand">
 <meta name="twitter:card" content="summary">
 </head>
@@ -226,7 +226,7 @@ e.exports=function(t){return null!=t&&(n(t)||function(t){return"function"==typeo
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">retail-analytics</span>
+    <span class="navbar-title">Data Analytics</span>
     </a>
   </div>
           <div class="quarto-toggle-container ms-auto">
@@ -248,33 +248,73 @@ e.exports=function(t){return null!=t&&(n(t)||function(t){return"function"==typeo
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Retail Data</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">Data Analytics Series</a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./data-description.html" class="sidebar-item-text sidebar-link">Data Description</a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./rfm.html" class="sidebar-item-text sidebar-link">Customer related Analysis for our data</a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./price_demand.html" class="sidebar-item-text sidebar-link">Understanding impact of price change on demand (Theory)</a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./supermart analysis-regression - 9 nov.html" class="sidebar-item-text sidebar-link active">Price Demand Analysis on Retail Data</a>
   </div>
 </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Finance Data</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./finance_data_analysis.html" class="sidebar-item-text sidebar-link">Credit Score Data</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_cleaning.html" class="sidebar-item-text sidebar-link">Data Cleaning</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./analysis.html" class="sidebar-item-text sidebar-link">Data Analysis</a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -323,7 +363,7 @@ e.exports=function(t){return null!=t&&(n(t)||function(t){return"function"==typeo
 </header>
 
 <!-- WARNING: THIS FILE WAS AUTOGENERATED! DO NOT EDIT! -->
-<div class="cell" data-execution_count="4">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import Libraries</span></span>
@@ -343,25 +383,25 @@ e.exports=function(t){return null!=t&&(n(t)||function(t){return"function"==typeo
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">'ignore'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div class="cell" data-execution_count="5">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># !pip install Jinja2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div class="cell" data-execution_count="6">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load Dataset</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df<span class="op">=</span>pd.read_csv(<span class="st">'Supermart_Dataset.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div class="cell" data-execution_count="7">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="7">
+<div class="cell-output cell-output-display">
 
 <div>
 
@@ -501,13 +541,13 @@ e.exports=function(t){return null!=t&&(n(t)||function(t){return"function"==typeo
 </div>
 </div>
 <p>Derive Price from Sales and Quantity: <span class="math inline">\(Price=Sales/Quantity\)</span></p>
-<div class="cell" data-execution_count="9">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'Price'</span>]<span class="op">=</span>df[<span class="st">'Sales'</span>]<span class="op">/</span>df[<span class="st">'Quantity'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div class="cell" data-execution_count="10">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert date column to datetime format</span></span>
@@ -515,7 +555,7 @@ e.exports=function(t){return null!=t&&(n(t)||function(t){return"function"==typeo
 </details>
 </div>
 <p>Add <code>Week</code>, <code>Month</code>, <code>Year</code> and <code>YearMonth</code> to dataframe</p>
-<div class="cell" data-execution_count="11">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Add week, month, year and yearmonth column</span></span>
@@ -532,7 +572,7 @@ e.exports=function(t){return null!=t&&(n(t)||function(t){return"function"==typeo
 <blockquote class="blockquote">
 <p>There is yearly seasonal pattern observed and upward trend</p>
 </blockquote>
-<div class="cell" data-execution_count="12">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>total_ym<span class="op">=</span>df.groupby([<span class="st">'YearMonth'</span>])[<span class="st">'Sales'</span>].agg(<span class="bu">sum</span>).reset_index()</span>
@@ -569,7 +609,7 @@ if (outputEl) {{
                         })                };                });            </script>        </div>
 </div>
 </div>
-<div class="cell" data-execution_count="13">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>total_q_ym<span class="op">=</span>df.groupby([<span class="st">'YearMonth'</span>])[<span class="st">'Quantity'</span>].agg(<span class="bu">sum</span>).reset_index()</span>
@@ -612,7 +652,7 @@ if (outputEl) {{
 <p>Time series data has 3 components, trend, seasonal and residual</p>
 </blockquote>
 <p><strong>Trend Component:</strong> There is upward trend present in the data</p>
-<div class="cell" data-execution_count="14">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>total_q_ym_sd<span class="op">=</span>total_q_ym</span>
@@ -626,7 +666,7 @@ if (outputEl) {{
 </div>
 </div>
 <p><strong>Seasonal Component:</strong> There is yearly seasonality present in the data</p>
-<div class="cell" data-execution_count="15">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>decompose <span class="op">=</span> seasonal_decompose(total_q_ym_sd.Quantity).seasonal.plot()</span>
@@ -639,7 +679,7 @@ if (outputEl) {{
 <blockquote class="blockquote">
 <p>There is no pattern observed between <code>Price</code> and <code>Quantity</code> at overall level</p>
 </blockquote>
-<div class="cell" data-execution_count="16">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>total_p_ym<span class="op">=</span>df.groupby([<span class="st">'YearMonth'</span>]).agg({<span class="st">'Price'</span>:<span class="st">'mean'</span>,<span class="st">'Quantity'</span>:<span class="st">'sum'</span>}).reset_index()</span>
@@ -680,7 +720,7 @@ if (outputEl) {{
 </section>
 <section id="category-level" class="level3">
 <h3 class="anchored" data-anchor-id="category-level">Category Level</h3>
-<div class="cell" data-execution_count="17">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span> (<span class="st">'Total quantiy sold:'</span>,df.Quantity.<span class="bu">sum</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -692,7 +732,7 @@ if (outputEl) {{
 <blockquote class="blockquote">
 <p>All cateogries are contributing to <code>~15%</code> of the total sales</p>
 </blockquote>
-<div class="cell" data-execution_count="18">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>cat_sales<span class="op">=</span>df.groupby([<span class="st">'Category'</span>])[<span class="st">'Quantity'</span>].agg(<span class="bu">sum</span>).reset_index().sort_values(by<span class="op">=</span><span class="st">'Quantity'</span>,ascending<span class="op">=</span><span class="va">False</span>)</span>
@@ -734,7 +774,7 @@ if (outputEl) {{
 <blockquote class="blockquote">
 <p>Oil and Masala has reduced in 2018<br> Q4 is performing better than rest of the quarters for all categories<br> Fruits &amp; Veggies sales reduced from 2016 to 2017</p>
 </blockquote>
-<div class="cell" data-execution_count="19">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>cat_q_ym<span class="op">=</span>df.groupby([<span class="st">'Category'</span>,<span class="st">'YearMonth'</span>, <span class="st">'Month'</span>])[<span class="st">'Quantity'</span>].agg(<span class="bu">sum</span>).reset_index()</span>
@@ -776,14 +816,14 @@ if (outputEl) {{
 <blockquote class="blockquote">
 <p><code>Trend</code> is added by assigning 1 to first date and then incrementing it by 1<br> <code>Seasonality</code> is added by including month number</p>
 </blockquote>
-<div class="cell" data-execution_count="20">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>trend_df<span class="op">=</span>df.groupby([<span class="st">'YearMonth'</span>,<span class="st">'Month'</span>])[<span class="st">'Quantity'</span>].agg(<span class="bu">sum</span>).reset_index()</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>trend_df[<span class="st">'Trend'</span>]<span class="op">=</span>pd.Series(<span class="bu">range</span>(<span class="dv">1</span>,trend_df.shape[<span class="dv">0</span>]<span class="op">+</span><span class="dv">1</span>))</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>trend_df[[<span class="st">'YearMonth'</span>,<span class="st">'Month'</span>,<span class="st">'Trend'</span>]].head(<span class="dv">15</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="20">
+<div class="cell-output cell-output-display">
 
 <div>
 
@@ -911,7 +951,7 @@ Seasonal component is correlated more with the category compared to trend compon
 </li>
 </ul>
 </blockquote>
-<div class="cell" data-execution_count="21">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>cat_q_ym</span>
@@ -942,7 +982,7 @@ Seasonal component is correlated more with the category compared to trend compon
 <blockquote class="blockquote">
 <p>At category level there is no significant trend is observed. Slope of the line is close to 0</p>
 </blockquote>
-<div class="cell" data-execution_count="22">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>total_p_ym<span class="op">=</span>df.groupby([<span class="st">'Category'</span>,<span class="st">'YearMonth'</span>]).agg({<span class="st">'Price'</span>:<span class="st">'mean'</span>,<span class="st">'Quantity'</span>:<span class="st">'sum'</span>}).reset_index()</span>
@@ -990,7 +1030,7 @@ if (outputEl) {{
 <blockquote class="blockquote">
 <p><strong>Equation:</strong> <span class="math inline">\(Category Demand = const+coef_1*Price_{subcat1}+coef_2*Price_{subcat2}+coef_3*Price_{subcat3}+...\)</span></p>
 </blockquote>
-<div class="cell" data-execution_count="23">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> coefplot(results, Category_name):</span>
@@ -1067,7 +1107,7 @@ if (outputEl) {{
 </div>
 <section id="coefficient-regression-plots-for-all-the-models" class="level4">
 <h4 class="anchored" data-anchor-id="coefficient-regression-plots-for-all-the-models">Coefficient Regression Plots for all the models</h4>
-<div class="cell" data-execution_count="24">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>Category_ls<span class="op">=</span>[<span class="st">'Bakery'</span>, <span class="st">'Beverages'</span>, <span class="st">'Eggs, Meat &amp; Fish'</span>, <span class="st">'Food Grains'</span>, <span class="st">'Fruits &amp; Veggies'</span>, <span class="st">'Oil &amp; Masala'</span>, <span class="st">'Snacks'</span>]</span>
@@ -1131,7 +1171,7 @@ if (outputEl) {{
 <p><img src="03_Supermart Analysis-Regression - 9 Nov_files/figure-html/cell-21-output-7.png" class="img-fluid"></p>
 </div>
 </div>
-<div class="cell" data-execution_count="25">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>output_coeff<span class="op">=</span>output[[<span class="st">'Category'</span>,<span class="st">'Variable'</span>,<span class="st">'Coefficient'</span>]].sort_values(by<span class="op">=</span>[<span class="st">'Category'</span>,<span class="st">'Coefficient'</span>], ascending<span class="op">=</span><span class="va">True</span>)</span>
@@ -1142,7 +1182,7 @@ if (outputEl) {{
 </section>
 <section id="regression-coeficient-values-in-tabular-format" class="level4">
 <h4 class="anchored" data-anchor-id="regression-coeficient-values-in-tabular-format">Regression coeficient values in tabular format</h4>
-<div class="cell" data-execution_count="26">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>df1_styler <span class="op">=</span> output_coeff[output_coeff[<span class="st">'Category'</span>]<span class="op">==</span><span class="st">'Bakery'</span>][[<span class="st">'Variable'</span>,<span class="st">'Coefficient'</span>]].reset_index(drop<span class="op">=</span><span class="va">True</span>).style.background_gradient(cmap<span class="op">=</span><span class="st">'RdGy'</span>).set_table_attributes(<span class="st">"style='display:inline'"</span>).set_caption(<span class="st">'Bakery'</span>)</span>
@@ -1627,12 +1667,12 @@ if (outputEl) {{
 </section>
 <section id="prediction" class="level4">
 <h4 class="anchored" data-anchor-id="prediction">Prediction</h4>
-<div class="cell" data-execution_count="28">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>pred_df[[<span class="st">'Category'</span>,<span class="st">'YearMonth'</span>,<span class="st">'Actual'</span>,<span class="st">'Predicted'</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="28">
+<div class="cell-output cell-output-display">
 
 <div>
 
@@ -1852,12 +1892,12 @@ if (outputEl) {{
 <section id="category-level-mape" class="level4">
 <h4 class="anchored" data-anchor-id="category-level-mape">Category level MAPE</h4>
 <p><strong>Equation:</strong> <span class="math inline">\(MAPE = mean(abs((actual-predicted)/actual))\)</span></p>
-<div class="cell" data-execution_count="29">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>pred_df.groupby([<span class="st">'Category'</span>]).MAPE.mean().reset_index().sort_values(<span class="st">'MAPE'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="29">
+<div class="cell-output cell-output-display">
 
 <div>
 
@@ -1917,7 +1957,7 @@ if (outputEl) {{
 <blockquote class="blockquote">
 <p><strong>Equation:</strong> <span class="math inline">\(Subcat Demand = Coef * Price + constant\)</span></p>
 </blockquote>
-<div class="cell" data-execution_count="31">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>Category_ls<span class="op">=</span>[<span class="st">'Bakery'</span>, <span class="st">'Beverages'</span>, <span class="st">'Eggs, Meat &amp; Fish'</span>, <span class="st">'Food Grains'</span>, <span class="st">'Fruits &amp; Veggies'</span>, <span class="st">'Oil &amp; Masala'</span>, <span class="st">'Snacks'</span>]</span>
@@ -1961,12 +2001,12 @@ if (outputEl) {{
 <span id="cb26-39"><a href="#cb26-39" aria-hidden="true" tabindex="-1"></a><span class="co">#     print(output)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div class="cell" data-execution_count="32">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>output[output[<span class="st">'Variable'</span>]<span class="op">==</span><span class="st">'Price'</span>][[<span class="st">'Category'</span>,<span class="st">'Sub Category'</span>,<span class="st">'Variable'</span>,<span class="st">'Coefficient'</span>]].sort_values(by<span class="op">=</span><span class="st">'Coefficient'</span>, ascending<span class="op">=</span><span class="va">True</span>).style.background_gradient(cmap<span class="op">=</span><span class="st">'RdYlGn'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="32">
+<div class="cell-output cell-output-display">
 
 <style type="text/css">
 #T_bedce_row0_col3 {
@@ -2238,7 +2278,7 @@ if (outputEl) {{
 </table>
 </div>
 </div>
-<div class="cell" data-execution_count="33">
+<div class="cell">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> nbdev<span class="op">;</span> nbdev.nbdev_export()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>

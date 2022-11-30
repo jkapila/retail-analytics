@@ -7,11 +7,13 @@ format:
       light: flatly
       dark: darkly
     css: styles.css
+    page-layout: article
     toc: true
     code-fold: true
     code-tools: true
 
 website:
+  title: 'Data Analytics'
   twitter-card: true
   open-graph: true
   repo-actions: [issue]
