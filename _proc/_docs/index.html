@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>retail-analytics - Data Analytics Series</title>
+<title>Data Analytics - Data Analytics Series</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -63,10 +63,10 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="retail-analytics - Data Analytics Series">
+<meta property="og:title" content="Data Analytics - Data Analytics Series">
 <meta property="og:description" content="Here we are doing a series on Data Analystics using a reatils data set taken from Kaggle.">
-<meta property="og:site-name" content="retail-analytics">
-<meta name="twitter:title" content="retail-analytics - Data Analytics Series">
+<meta property="og:site-name" content="Data Analytics">
+<meta name="twitter:title" content="Data Analytics - Data Analytics Series">
 <meta name="twitter:description" content="Here we are doing a series on Data Analystics using a reatils data set taken from Kaggle.">
 <meta name="twitter:card" content="summary">
 </head>
@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">retail-analytics</span>
+    <span class="navbar-title">Data Analytics</span>
     </a>
   </div>
           <div class="quarto-toggle-container ms-auto">
@@ -101,33 +101,63 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Retail Data</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">Data Analytics Series</a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./data-description.html" class="sidebar-item-text sidebar-link">Data Description</a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./rfm.html" class="sidebar-item-text sidebar-link">Customer related Analysis for our data</a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./price_demand.html" class="sidebar-item-text sidebar-link">Understanding impact of price change on demand (Theory)</a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./supermart analysis-regression - 9 nov.html" class="sidebar-item-text sidebar-link">Price Demand Analysis on Retail Data</a>
   </div>
 </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Finance Data</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./finance_data_analysis.html" class="sidebar-item-text sidebar-link">Finance Data Analysis</a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -137,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome-to-retail-analytics-website" id="toc-welcome-to-retail-analytics-website" class="nav-link active" data-scroll-target="#welcome-to-retail-analytics-website">Welcome to retail-analytics Website</a></li>
+  <li><a href="#welcome-to-data-analytics-website" id="toc-welcome-to-data-analytics-website" class="nav-link active" data-scroll-target="#welcome-to-data-analytics-website">Welcome to Data-analytics Website</a></li>
   <li><a href="#you-can-do-and-add-you-analysis-using-follwing-steps" id="toc-you-can-do-and-add-you-analysis-using-follwing-steps" class="nav-link" data-scroll-target="#you-can-do-and-add-you-analysis-using-follwing-steps">You can do and add you analysis using follwing steps</a></li>
   <li><a href="#analysis-and-queries" id="toc-analysis-and-queries" class="nav-link" data-scroll-target="#analysis-and-queries">Analysis and Queries</a></li>
   </ul>
@@ -164,8 +194,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <!-- WARNING: THIS FILE WAS AUTOGENERATED! DO NOT EDIT! -->
-<section id="welcome-to-retail-analytics-website" class="level2">
-<h2 class="anchored" data-anchor-id="welcome-to-retail-analytics-website">Welcome to retail-analytics Website</h2>
+<section id="welcome-to-data-analytics-website" class="level2">
+<h2 class="anchored" data-anchor-id="welcome-to-data-analytics-website">Welcome to Data-analytics Website</h2>
 <p>Here we are doing a series on Data Analystics using a reatils data set taken from Kaggle.</p>
 <p>Here are the notebooks for two session done till now</p>
 <ol type="1">
